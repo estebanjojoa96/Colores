@@ -37,7 +37,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"/>
+            android:layout_margin="15dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -54,11 +54,21 @@
             android:layout_margin="10dp"/>
         <SeekBar
             android:id="@+id/seek_green"
-            android:layout_width="match_parent"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:progress="128"
             android:max="255"
             android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/seekNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -75,11 +85,21 @@
             android:layout_margin="10dp"/>
         <SeekBar
             android:id="@+id/seek_blue"
-            android:layout_width="match_parent"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:progress="128"
             android:max="255"
             android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/seekNumber3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -96,11 +116,21 @@
             android:layout_margin="10dp"/>
         <SeekBar
             android:id="@+id/seek_Alpha"
-            android:layout_width="match_parent"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:progress="128"
             android:max="255"
             android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/seekNumber4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"/>
 
     </LinearLayout>
 

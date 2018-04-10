@@ -16,10 +16,13 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
 
 
-    int seekR, seekB,seekG,seekA,NumberSeekR;
+    int seekR, seekB,seekG,seekA,NumberSeekR,NumberseekG,NumberseekB,NumberseekA;
     SeekBar seekBarRed,seekBarGreen,seekBarBlue,seekBarAlpha;
     View viewColor;
     TextView NumberText;
+    TextView NumberText2;
+    TextView NumberText3;
+    TextView NumberText4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         seekBarAlpha=(SeekBar) findViewById(R.id.seek_Alpha);
         viewColor = (View) findViewById(R.id.view);
         NumberText = (TextView) findViewById(R.id.seekNumber);
+        NumberText2 = (TextView) findViewById(R.id.seekNumber2);
+        NumberText3 = (TextView) findViewById(R.id.seekNumber3);
+        NumberText4 = (TextView) findViewById(R.id.seekNumber4);
 
         seekBarRed.setOnSeekBarChangeListener(this);
         seekBarBlue.setOnSeekBarChangeListener(this);
@@ -94,10 +100,16 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
 
-        //Number();
+
         UpdateBackground();
         NumberSeekR=seekBarRed.getProgress();
         NumberText.setText(String.valueOf(NumberSeekR));
+        NumberseekG=seekBarGreen.getProgress();
+        NumberText2.setText(String.valueOf(NumberseekG));
+        NumberseekB=seekBarBlue.getProgress();
+        NumberText3.setText(String.valueOf(NumberseekB));
+        NumberseekA=seekBarAlpha.getProgress();
+        NumberText4.setText(String.valueOf(NumberseekA));
 
     }
 
